@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sipariş ve Ödeme — Aura Florist</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/logo.ico">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Logo" class="logo-img">
+      <span>Aura Florist</span>
+    </div>
+    <nav class="nav-menu">
+      <a href="index.html">Alışverişe Dön</a>
+    </nav>
+  </header>
+
+  <main class="checkout-page">
+    <div class="checkout-layout">
+
+      <!-- Sol Taraf: Fatura Bilgileri Kartı -->
+      <section class="checkout-card">
+        <h1 class="checkout-title">Fatura Bilgileri</h1>
+        
+        <form class="invoice-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="full-name">Gönderici Adı Soyadı*</label>
+              <input type="text" id="full-name" placeholder="Ad Soyad" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Gönderici Telefon Numarası*</label>
+              <input type="tel" id="phone" placeholder="(5__) ___-____" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Gönderici E-Posta*</label>
+            <input type="email" id="email" placeholder="E-Posta" required>
+          </div>
+
+          <label class="checkbox-label">
+            <input type="checkbox">
+            <span>Fatura istiyorum</span>
+          </label>
+        </form>
+      </section>
+
+      <!-- Sağ Taraf: Sipariş Özeti Kartı -->
+      <section class="checkout-card summary-card">
+        <h2 class="checkout-title">Sipariş Özeti</h2>
+
+        <!-- Teslimat Bölgesi Kutusu -->
+        
+
+        <!-- Ürünler Başlık ve Buton -->
+        <div class="section-row">
+          <h3>Ürünler</h3>
+          <a href="index.html#flowers" class="add-product-btn">Ürün Ekle +</a>
+        </div>
+
+        <!-- Sepetteki Ürün Kartı -->
+        <div class="item-card">
+          <img id="buy-img" src="images/whiterose.webp" alt="Flower" class="item-img">
+          <div class="item-info">
+            <div id="buy-name" class="item-name">White Rose Bouquet</div>
+            <div class="item-sub">Teslimat Tarihi:</div>
+            <div class="item-date">11 Kas 2026 / 14:00 – 17:00</div>
+            <div class="qty-pill">
+              <button type="button" class="qty-btn">&#128465;</button>
+              <span class="qty-count">1</span>
+              <button type="button" class="qty-btn">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fiyat Dökümü -->
+        <div class="price-line">
+          <span>Teslimat Ücreti</span>
+          <strong>0,00 TL</strong>
+        </div>
+
+        <div class="total-line">
+          <div>
+            <span class="total-label">Toplam Fiyat</span>
+            <span class="tax-tag">KDV Dahil</span>
+          </div>
+          <span id="buy-price" class="total-price">1900,00 TL</span>
+        </div>
+
+        <button type="button" class="order-confirm-btn">Siparişi Onayla</button>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Aura Florist</p>
+  </footer>
+
+  <script src="dynamic.js"></script>
+</body>
+</html>
