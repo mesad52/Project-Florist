@@ -684,3 +684,171 @@ html {
     padding: 22px 18px;
   }
 }
+
+.theme-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: white;
+  width: auto;
+  padding: 5px 11px;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.theme-btn:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* Dark Mode Theme Overrides */
+body.dark-mode {
+  background-color: #141715;
+  color: #e4e6e5;
+}
+
+body.dark-mode header {
+  background-color: #243629;
+}
+
+body.dark-mode main h2,
+body.dark-mode .product-card h3,
+body.dark-mode .detail-content h1,
+body.dark-mode .section-row h3,
+body.dark-mode .total-label,
+body.dark-mode .total-price,
+body.dark-mode .box-title,
+body.dark-mode .price-line strong,
+body.dark-mode .contact-item span,
+body.dark-mode .item-name {
+  color: #f0f2f1;
+}
+
+body.dark-mode .checkout-title,
+body.dark-mode .about-us h2,
+body.dark-mode .detail-content h3,
+body.dark-mode .contact-card h1,
+body.dark-mode .contact-card h2 {
+  color: #8fa3ff;
+}
+
+body.dark-mode .about-badge {
+  background-color: #27382c;
+  color: #98c9a6;
+}
+
+body.dark-mode .about-lead,
+body.dark-mode .price,
+body.dark-mode .detail-price,
+body.dark-mode .detail-tag,
+body.dark-mode .contact-item strong {
+  color: #82b891;
+}
+
+body.dark-mode .about-us,
+body.dark-mode .product-card,
+body.dark-mode .detail-card,
+body.dark-mode .checkout-card,
+body.dark-mode .contact-card,
+body.dark-mode footer {
+  background-color: #1e2320;
+  border-color: #2f3632;
+  color: #d8dcd9;
+}
+
+body.dark-mode .summary-box,
+body.dark-mode .item-card,
+body.dark-mode .qty-pill {
+  background-color: #272d2a;
+  border-color: #38403c;
+}
+
+body.dark-mode .about-text,
+body.dark-mode .detail-content p,
+body.dark-mode .contact-lead,
+body.dark-mode .box-sub,
+body.dark-mode .box-date,
+body.dark-mode .item-sub,
+body.dark-mode .item-date,
+body.dark-mode .price-line,
+body.dark-mode .form-group label,
+body.dark-mode .checkbox-label,
+body.dark-mode footer {
+  color: #b0b6b2;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .contact-form textarea {
+  background-color: #141715;
+  border-color: #38403c;
+  color: #f0f2f1;
+}
+
+body.dark-mode .qty-btn {
+  color: #f0f2f1;
+}
+
+body.dark-mode .price-line,
+body.dark-mode .total-line,
+body.dark-mode .contact-details {
+  border-top-color: #2f3632;
+}
+
+.comparison-section {
+  max-width: 960px;
+  margin: 20px auto 50px auto;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.info-table th {
+  background-color: #4a6b53;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 18px;
+}
+
+.info-table td {
+  padding: 13px 18px;
+  font-size: 14px;
+  border-bottom: 1px solid #eeeeee;
+  color: #444;
+}
+
+.info-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.info-table tbody tr:hover {
+  background-color: #f4f8f5;
+}
+
+/* Dark Mode Support for Tables */
+body.dark-mode .info-table {
+  background-color: #1e2320;
+  border-color: #2f3632;
+}
+
+body.dark-mode .info-table th {
+  background-color: #26382b;
+}
+
+body.dark-mode .info-table td {
+  border-bottom-color: #2f3632;
+  color: #d0d5d2;
+}
+
+body.dark-mode .info-table tbody tr:hover {
+  background-color: #272d2a;
+}
