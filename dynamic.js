@@ -1,6 +1,3 @@
-// ==========================================================================
-// 1. DARK MODE TOGGLE (Works on all pages & remembers choice)
-// ==========================================================================
 const darkModeBtn = document.getElementById('dark-mode-toggle');
 
 if (localStorage.getItem('theme') === 'dark') {
@@ -22,9 +19,6 @@ if (darkModeBtn) {
   });
 }
 
-// ==========================================================================
-// 2. DYNAMIC PRODUCT LOADING (buy_screen.html)
-// ==========================================================================
 const params = new URLSearchParams(window.location.search);
 const flowerName = params.get('name');
 const flowerPriceStr = params.get('price');
@@ -52,9 +46,6 @@ if (flowerPriceStr && buyPriceEl) {
   }
 }
 
-// ==========================================================================
-// 3. LIVE QUANTITY & PRICE CALCULATOR (buy_screen.html)
-// ==========================================================================
 const qtyButtons = document.querySelectorAll('.qty-btn');
 const qtyCountEl = document.querySelector('.qty-count');
 
