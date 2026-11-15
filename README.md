@@ -1,21 +1,14 @@
 # Aura Florist
 
 ## Project Overview & Problem Statement
-Aura Florist is a frontend e-commerce prototype for a local flower shop. Many small florist websites either lack clear pricing and care details or make users re-enter product choices during checkout. This project creates a clean, multi-page online storefront where users can browse bouquets, check flower care and lifespan information, view boutique locations, and place an order with automatic price calculation.
-
-## Target Users
-- People looking to buy flower bouquets online for gifts or special occasions.
-- Local customers in İstanbul and Kocaeli who want to check store addresses, hours, and care instructions before ordering.
+Aura Florist is a frontend website prototype for a local flower shop. Many small florist websites lack clear bouquet care guides or make customers re-select items during checkout. This project solves that by offering a simple, multi-page storefront where users can browse bouquets, view care tips and branch locations, and calculate their order total automatically.
 
 ## Main Features
-- **6 Interconnected Pages:** Includes a home page (`index.html`), three individual bouquet detail pages (`white.html`, `red.html`, `tulip.html`), a checkout page (`buy_screen.html`), and a contact page (`contact_us.html`).
-- **Dark Mode:** A theme toggle button in the navigation bar that switches between light and dark mode and saves the user's choice in `localStorage`.
-- **Dynamic Checkout Loading:** Clicking "Buy Now" sends the selected flower's name, price, and image to the checkout page using URL parameters.
-- **Quantity & Price Calculator:** Users can increase or decrease bouquet quantities on the checkout screen and see the total price update automatically.
-- **Care & Location Tables:** Structured HTML tables showing flower lifespan/watering tips and boutique branch addresses.
-- **Form Validation:** Basic HTML5 and JavaScript validation on the checkout and contact forms.
+- **6 Interconnected Pages:** Home (`index.html`), 3 flower detail pages (`white.html`, `red.html`, `tulip.html`), Checkout (`buy_screen.html`), and Contact (`contact_us.html`).
+- **Dark Mode:** Theme toggle button in the header that saves user preference using `localStorage`.
+- **Dynamic Checkout & Price Calculator:** Passes selected flower info via URL parameters and updates the total price in real time when changing quantities.
+- **Care & Location Tables:** Structured tables for flower lifespan/watering tips and boutique branches.
+- **Form Validation:** Basic HTML5 and JavaScript validation on checkout and contact forms.
 
-## Technologies Used
-- HTML5
-- CSS3 (Flexbox, CSS Grid, Media Queries)
-- JavaScript (`dynamic.js`)
+## AI Usage Disclosure
+- **Gemini AI** was used for assistance with JavaScript DOM manipulation (`localStorage` dark mode and URL parameter handling), CSS responsive layout debugging, and structuring documentation.
